@@ -20,10 +20,6 @@ header {
   font-size: 2rem;
 }
 
-main {
-  grid-template-columns: 25% 75%;
-}
-
 p, ul {
   font-family: arial, sans-serif;
   margin: 1rem;
@@ -44,11 +40,9 @@ nav ul {
   margin: 0px;
 }
 
-
 .main-section li {
   margin: 1rem;
 }
-
 
 nav li {
   border-top: 2px solid var(--dark-grey);
@@ -145,7 +139,7 @@ button::before:focus {
   display: inline-block;
 }
 
-
+/* media queries */
 @media screen and (min-height: 909px) {
   nav {
     overflow-y: hidden;
@@ -164,8 +158,7 @@ button::before:focus {
 }
 
 @media screen and (max-width: 770px) {
-
-  nav {
+    nav {
     width: 30%;
   }
 
@@ -180,9 +173,7 @@ button::before:focus {
   }
 }
 
-
 @media screen and (max-width: 670px) {
-
   nav {
     width: 99%;
     position: static;
