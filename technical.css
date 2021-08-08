@@ -156,6 +156,7 @@ button::before:focus {
 
   #main-doc {
     left: 29%;
+    overflow-x: hidden;
   }
 }
 
@@ -187,6 +188,7 @@ button::before:focus {
 
   #main-doc {
     position: static;
+    overflow-x: hidden;
   }
 
   .main-section {
