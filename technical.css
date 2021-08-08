@@ -115,3 +115,23 @@ header {
     overflow-y: hidden;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  nav {
+    width: 28%;
+  }
+
+  #main-doc {
+    left: 29%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  p, ul {
+    font-size: 1.1rem;
+  }
+
+  nav {
+    width: 30%;
+  }
+}
