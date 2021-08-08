@@ -1,0 +1,117 @@
+* {
+  font-size: 16px;
+  --dark-grey: #a9aaab;
+  --darker-grey: #525252;
+  --light-grey: #F4F4F4;
+  --light-blue: #39f;
+}
+
+html, nav {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+main {
+  grid-template-columns: 25% 75%;
+}
+
+p, ul {
+  font-family: arial, sans-serif;
+  margin: 1rem;
+  color: var(--darker-grey);
+  line-height: 1.5em;
+}
+
+code {
+  background: var(--light-grey);
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.main-section li {
+  margin: 1rem;
+}
+
+
+nav li {
+  border-top: 2px solid var(--dark-grey);
+  width: 100%;
+  padding: 16px 0 16px 14px;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--darker-grey);
+  transition: padding 0.5s ease-in,
+              color 0.5s ease-in;
+}
+
+.main-section {
+  margin: 2.4em;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 99vh;
+  border-right: 2px solid var(--dark-grey);
+  padding-top: 10px;
+  margin: 0;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#main-doc {
+  position: absolute;
+  left: 26%;
+}
+
+nav a:hover {
+  padding-left: 26px;
+  color: var(--light-blue);
+}
+
+nav header {
+  padding: 0.75em;
+}
+
+header {
+  color: var(--darker-grey);
+  position: relative;
+  padding-left: 1rem;
+}
+
+.main-section header::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  height: 0;
+  width: 0;
+  border-top: 10px solid transparent;
+  border-left: 15px solid var(--light-blue);
+  border-bottom: 10px solid transparent;
+}
+
+@media screen and (min-height: 909px) {
+  nav {
+    overflow-y: hidden;
+  }
+}
