@@ -110,6 +110,37 @@ header {
   border-bottom: 10px solid transparent;
 }
 
+button {
+  border: none;
+  background: white;
+  font-family: arial, sans-serif;
+  font-weight: 600;
+  position: relative;
+  margin: 0 16px 26px 40px;
+  color: var(--darker-grey);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -16px;
+  height: 0;
+  width: 0;
+  border-top: 8px solid transparent;
+  border-left: 12px solid var(--light-blue);
+  border-bottom: 8px solid transparent;
+}
+
+button::before:focus {
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+
 @media screen and (min-height: 909px) {
   nav {
     overflow-y: hidden;
@@ -139,5 +170,55 @@ header {
 
   #main-doc {
     left: 31%;
+    overflow-x: hidden;
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+  nav {
+    width: 99%;
+    position: static;
+  }
+
+  #main-doc {
+    position: static;
+  }
+
+  .main-section {
+    margin: 0.8rem 0.2rem 0.8rem 0.8rem;
+  }
+
+  nav {
+    height: auto;
+    border: 2px solid var(--dark-grey);
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .main-section ul {
+    padding-left: 10px;
+  }
+
+  code {
+    overflow-x: scroll;
+  }
+
+  main {
+    margin: 2rem 0;
+  }
+
+  .main-section header {
+    margin-left: 1.6rem;
+  }
+}
+
+/* hides the drop down menu button on larger screens */
+@media screen and (min-width: 511px) {
+  button {
+    display: none;
   }
 }
