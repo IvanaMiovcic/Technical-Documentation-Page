@@ -81,6 +81,7 @@ nav {
 #main-doc {
   position: absolute;
   left: 26%;
+  overflow-x: hidden;
 }
 
 nav a:hover {
@@ -115,6 +116,7 @@ button {
   background: white;
   font-family: arial, sans-serif;
   font-weight: 600;
+  text-decoration: underline;
   position: relative;
   margin: 0 16px 26px 40px;
   color: var(--darker-grey);
@@ -176,7 +178,8 @@ button::before:focus {
 }
 
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 670px) {
+
   nav {
     width: 99%;
     position: static;
@@ -187,7 +190,7 @@ button::before:focus {
   }
 
   .main-section {
-    margin: 0.8rem 0.2rem 0.8rem 0.8rem;
+    margin: 1.6rem 0.2rem 0.8rem 0.8rem;
   }
 
   nav {
@@ -208,16 +211,16 @@ button::before:focus {
   }
 
   main {
-    margin: 2rem 0;
+    margin: 1.6rem 0;
   }
 
   .main-section header {
-    margin-left: 1.6rem;
+    margin-left: 1.6rem ;
   }
 }
 
 /* hides the drop down menu button on larger screens */
-@media screen and (min-width: 511px) {
+@media screen and (min-width: 670px) {
   button {
     display: none;
   }
