@@ -130,6 +130,10 @@ header {
   p, ul {
     font-size: 1.1rem;
   }
+  
+  header {
+    font-size: 2.1rem;
+  }
 
   nav {
     width: 30%;
