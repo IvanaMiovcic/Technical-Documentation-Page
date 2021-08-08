@@ -11,6 +11,9 @@ html, nav {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
 header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
@@ -175,7 +178,6 @@ button::before:focus {
     left: 31%;
     overflow-x: hidden;
   }
-
 }
 
 
